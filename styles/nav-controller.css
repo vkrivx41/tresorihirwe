@@ -1,0 +1,248 @@
+.container > .header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    z-index: 99;
+}
+.container > .header > .nav-bar{
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    position: relative;
+}
+.container > .header >.mobile-links{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 30);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.container > .header >.mobile-links > ul{
+    list-style: none;
+}
+.container > .header >.mobile-links > ul > li{
+    margin: 50px 0;
+}
+.container > .header >.mobile-links > ul > li > a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.container > .header >.mobile-links > ul > li > a:hover{
+    color:rgb(255, 126, 126);
+}
+.container > .header >.mobile-links > .close{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    overflow: hidden;
+}
+.container > .header >.mobile-links > .close >img[class="logo"]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container > .header > .nav-bar >.logo{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container > .header > .nav-bar >.logo > span{
+    font-weight: 900;
+}
+.container > .header > .nav-bar >.links{
+    width: 60%;
+}
+.container > .header > .nav-bar >.mobile-links{
+    display: none;
+}
+.container > .header > .nav-bar >.social-media-view{
+    display: none;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+.container > .header > .nav-bar >.social-media-view >img[class='logo']{
+    color: aliceblue;
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.container > .header > .nav-bar >.social-media{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all ease-in-out 300ms;
+}
+.container > .header > .nav-bar >.social-media > div{
+    margin: 0 10px;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container > .header > .nav-bar >.social-media > div:hover{
+    box-shadow: 0 0 5px aliceblue,
+                0 0 10px aliceblue,
+                0 0 20px aliceblue;
+}
+.container > .header > .nav-bar >.social-media > div >a{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.container > .header > .nav-bar >.social-media > div >a > img[class='logo']{
+    color: rgb(0, 0, 30);
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.container > .header > .nav-bar >.links > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.container > .header > .nav-bar >.links > ul > li{
+    margin: 0 10px;
+}
+.container > .header > .nav-bar >.links > ul > li > a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.container > .header > .nav-bar >.links > ul > li > a:hover{
+    color: rgb(255, 126, 126);
+}
+.container > .header > .nav-bar >.burger{
+    width: 40px;
+    height: 40px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.container > .header > .mobile-links >.social-media{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all ease-in-out 300ms;
+}
+.container > .header > .mobile-links >.social-media > div{
+    margin: 0 10px;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container > .header > .mobile-links >.social-media > div:hover{
+    box-shadow: 0 0 5px aliceblue,
+                0 0 10px aliceblue,
+                0 0 20px aliceblue;
+}
+.container > .header > .mobile-links >.social-media > div >a{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.container > .header > .mobile-links >.social-media > div >a > img[class='logo']{
+    color: rgb(0, 0, 30);
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    overflow: hidden;
+}
+@media screen and (max-width:1080px) {
+    .container > .header > .nav-bar >.social-media-view{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container > .header > .nav-bar >.social-media{
+        width: fit-content;
+        display: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        visibility: none;
+        position: absolute;
+        bottom: -70px;
+        padding: 10px 0;
+        right: 30px;
+        background-color: rgb(0, 0, 30);
+        border-radius: 5px;
+        z-index: 99;
+    }
+}
+@media screen and (max-width:680px) {
+    .container > .header > .nav-bar >.social-media-view{
+        display: none;
+    }
+    .container > .header > .nav-bar >.social-media{
+        display: none;
+    }
+    .container > .header > .nav-bar >.burger{
+        display: flex;
+    }
+    .container > .header > .nav-bar >.burger >img[class="logo"]{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .container > .header > .nav-bar > .links{
+        display: none;
+    }
+    .container > .header > .nav-bar > .logo{
+        width: 40%;
+    }
+    .container > .header >.mobile-links{
+        display: none;
+    }
+}

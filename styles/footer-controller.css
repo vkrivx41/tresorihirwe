@@ -1,0 +1,91 @@
+.footer{
+    width: 100%;
+    padding: 5% 20%;
+    background-color: rgb(0, 0, 30);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer > .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer > .top > p{
+    width: 50%;
+    text-align: center;
+    font-size: .8em;
+}
+.footer > .top > .approvals{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer > .top > .approvals > .approval{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 0 10px;
+    opacity: .5;
+}
+.footer > .top > .approvals > .approval:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.footer > .lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer > .lower > .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.footer > .lower > .links > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.footer > .lower > .links > ul > li{
+    margin: 0 15px;
+}
+.footer > .lower > .links > ul > li >a{
+    color: aliceblue;
+    font-size: .8em;
+    text-decoration: none;
+}
+.footer > .lower > .links > ul > li >a:hover{
+    color: rgb(255, 126, 126);
+}
+.footer > .lower >.creator{
+    font-size: .5em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+@media screen and (max-width:1080px) {
+    .footer{
+        padding: 5%;
+    }
+    .footer > .top > p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .footer > .lower > .links > ul{
+        flex-direction: column;
+    }
+}

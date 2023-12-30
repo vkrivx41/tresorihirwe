@@ -1,0 +1,88 @@
+.content{
+    padding: 10%;
+}
+.content-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: fit-content;
+}
+.content-header > .greetings{
+    margin-right: 20px;
+    font-size: .9em;
+}
+.content-header > .names{
+    font-weight: 600;
+    font-size: .9em;
+}
+.payment-methods{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.payment-methods > .payment{
+    position: relative;
+}
+.payment-methods > .payment > .radios{
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 30px 10px;
+    background-color: rgb(0,0,30);
+    border-radius: 5px;
+    width: 200px;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+.payment-methods > .payment > .radios:hover{
+    box-shadow: 0 0 10px rgb(0,0,30);
+    scale: 1.1;
+}
+.payment-methods > .payment > input[type='radio']:checked{
+    background-color: rgb(0,0,30);
+    outline: 2px solid rgb(0,0,30);
+    outline-offset: 5px;
+}
+.payment-methods > .payment > input[type='radio']:checked:hover{
+    box-shadow: none;
+}
+.payment-methods > .payment:hover > span{
+    font-weight: 600;
+}
+.payment-methods > .payment > span{
+    position: absolute;
+    z-index: 3;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.submit{
+    margin: 40px 0;
+}
+.submit > input{
+    border: none;
+    overflow: none;
+    background: none;
+    padding: 20px 50px;
+    border: 2px solid rgb(0,0,30);
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgb(0,0,30);
+}
+.submit > input:hover{
+    background-color: rgb(0,0,30);
+    color: white;
+}
+@media screen and (max-width:680px) {
+    .payment-methods{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:450px) {
+    .payment-methods{
+        grid-template-columns: 1fr;
+    }
+}

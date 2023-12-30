@@ -1,0 +1,132 @@
+.content{
+    position: relative;
+}
+.content > .scroller-next,.scroller-prev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    padding: 0 10px;
+    z-index: 70;
+}
+.scroller-icon-wrapper{
+    cursor: pointer;
+}
+.content > .scroller-next{
+    background: linear-gradient(to left,white 50%,rgba(255, 255, 255, 0));
+    align-items: flex-end;
+    right: 0;
+}
+.content > .scroller-prev{
+    background: linear-gradient(to left,rgba(255, 255, 255, 0),white 60%);
+    align-items: flex-start;
+    left: 0;
+}
+.content > .scroller-prev > .scroller-icon-wrapper{
+    transform: rotate(180deg);
+}
+.biography{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: 0;
+    flex-shrink: 0;
+    width: max-content;
+    position: relative;
+    transition: all ease-in-out 400ms;
+}
+.biography > .progress{
+    position: relative;
+}
+.biography > .progress > .progress-picture{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(0,0,30);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.biography > .progress > .progress-picture > img{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+.biography > .line{
+    background:none;
+    width: 400px;
+    height: 100px;
+    align-self: flex-start;
+    transform: translateY(50%);
+    border-top: 3px solid rgb(0,0,30);
+}
+.biography > .progress > .progress-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 3px solid rgb(0,0,30);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    opacity: 1;
+}
+.biography > .progress > .progress-text-wrapper > .progress-text > h1{
+    font-size: .8em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.biography > .progress > .progress-text-wrapper > .progress-text > p{
+    font-size: .7em;
+    font-weight: 400;
+}
+.biography > .progress > .progress-picture:hover+.progress-text-wrapper{
+    opacity: 1;
+    top: 110%;
+    transition: all ease-in-out 300ms;
+}
+
+@media screen and (max-width:680px) {
+    .content > .scroller-next,.scroller-prev{
+        display: none;
+    }
+    .biography{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        padding-top: 40%;
+        padding-left: 10%;
+    }
+    .biography > .line{
+        background:none;
+        width: 100px;
+        height: 400px;
+        align-self: flex-start;
+        transform: translate(30%,0%);
+        border-left: 3px solid rgb(0,0,30);
+        border-top: none;
+    }
+    .biography > .progress > .progress-text-wrapper{
+        border-top: none;
+        border-left: 3px solid rgb(0,0,30);
+        left: 120%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 200px;
+    }
+    .biography > .progress > .progress-picture:hover+.progress-text-wrapper{
+        left: 120%;
+    }
+}

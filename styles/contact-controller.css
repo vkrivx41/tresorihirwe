@@ -1,0 +1,143 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact > .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0;
+}
+.contact > .head > span{
+    font-size: 2em;
+    font-weight: 700;
+}
+.contact > .head > .head-words{
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contact > .head > .head-words > p{
+    font-size: .6em;
+}
+.contact > .form{
+    width: 100%;
+}
+.contact > .form > form{
+    width: 100%;
+}
+.contact > .form > form > .top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.contact > .form > form > .top > input{
+    width: 45%;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    font-size: .9em;
+    padding: 10px 20px;
+}
+.contact > .form > form > .top > input:focus{
+    outline: 3px solid rgb(0, 0, 30);
+    outline-offset: 2px;
+}
+.contact > .form > form > .middle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+.contact > .form > form > .middle > textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    resize: none;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    font-size: .9em;
+    padding: 10px 20px;
+}
+.contact > .form > form > .middle > textarea:focus{
+    outline: 3px solid rgb(0, 0, 30);
+    outline-offset: 2px;
+}
+.contact > .form > form > .bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+.contact > .form > form > .bottom > input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    resize: none;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    font-weight: 400;
+    color: rgb(0, 0, 30);
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.contact > .form > form > .bottom > input:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 30);
+    color: whitesmoke;
+}
+.contact > .bottom-appretiations{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+.contact > .bottom-appretiations > span{
+    font-size: .6em;
+}
+@media screen and (max-width:1080px) {
+    .contact{
+        width: 90%;
+    }
+}
+@media screen and (max-width:680px) {
+    .contact > .head > .head-words{
+        display: none;
+    }
+    .contact > .form > form > .top{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .contact > .form > form > .top > input{
+        width: 100%;
+        margin: 10px 0;
+    }
+}

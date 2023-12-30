@@ -1,0 +1,78 @@
+.informations{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.informations > .message{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.informations > .message > .message-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.informations > .message > .message-wrapper > .top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.informations > .message > .message-wrapper > .top > div{
+    width: 40%;
+    background-color: #ccc;
+    border-radius: 6px;
+    padding: 10px;
+}
+.informations > .message > .message-wrapper > .bottom{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.informations > .message > .message-wrapper > .bottom > .message{
+    width: 100%;
+    height: 80%;
+    background-color: #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.informations > .message > .message-wrapper > .bottom > .remove{
+    width: fit-content;
+    height: 20%;
+    margin-top: 20px;
+    background-color: rgb(0,0,30);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 5px 15px;
+}
+.informations > .message > .message-wrapper > .bottom > .remove > a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.informations > .message > .message-wrapper > .bottom > .remove > a >img{
+    margin: 0 10px;
+}

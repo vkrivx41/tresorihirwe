@@ -1,0 +1,445 @@
+.content{
+    padding: 25% 10% 10% 10%;
+    width: 100%;
+}
+.diagram{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10%;
+    position: relative;
+}
+.diagram > .profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0, 0, 30);
+    border: 4px solid rgb(255, 255, 255);
+    position: relative;
+}
+.diagram > .profile > .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.diagram > .profile > .img > img[class="profile-img"]{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.diagram > .profile > .name-tag{
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(0, 0, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.diagram > .profile > .name-tag > span{
+    font-size: .8em;
+    font-weight: 600;
+}
+.diagram > .div-one{
+    width: 200px;
+    height: 100px;
+    background: none;
+    border-bottom: 4px solid rgb(0, 0, 30);
+    border-right: 4px solid rgb(0, 0, 30);
+    border-bottom-right-radius: 100%;
+    margin-right: 200px;
+}
+.diagram > .div-two{
+    width: 200px;
+    height: 100px;
+    background: none;
+    border-top: 4px solid rgb(0, 0, 30);
+    border-left: 4px solid rgb(0, 0, 30);
+    border-top-left-radius: 100%;
+    margin-right: 600px;
+    margin-top: -4px;
+}
+.diagram > .business-icon-wrapper{
+    background: rgb(0, 0, 30);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 800px;
+    border: 3px solid white;
+    position: relative;
+}
+.diagram > .business-icon-wrapper:hover{
+    cursor: pointer;
+}
+.diagram > .business-icon-wrapper > img[class="icon"]{
+    width: 20px;
+    height: 20px;
+}
+.diagram > .business-icon-wrapper > .business-statement{
+    position: absolute;
+    left: 150%;
+    top: 50%;
+    width: 400px;
+    padding: 10px;
+    border-left: 3px solid rgb(0, 0, 30);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.diagram > .business-icon-wrapper > .name-tag{
+    position: absolute;
+    right: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 10px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(0, 0, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.diagram > .business-icon-wrapper > .name-tag > span{
+    font-size: .8em;
+    font-weight: 600;
+}
+.diagram > .business-icon-wrapper > .business-statement > p{
+    font-size: .8em;
+    padding: 70px;
+}
+.diagram > .div-three{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border-left: 4px solid rgb(0, 0, 30);
+    margin-right: 700px;
+    margin-top: -4px;
+    
+}
+.diagram > .div-four{
+    width: 300px;
+    height: 200px;
+    background: none;
+    border-left: 4px solid rgb(0, 0, 30);
+    border-bottom: 4px solid rgb(0, 0, 30);
+    border-bottom-left-radius: 80%;
+    margin-right: 500px;
+    margin-top: -4px;
+}
+.diagram > .div-five{
+    width: 300px;
+    height: 300px;
+    background: none;
+    border-left: 4px solid rgb(0, 0, 30);
+    margin-right: 500px;
+    margin-top: -150px;
+}
+.diagram > .div-six{
+    width: 300px;
+    height: 150px;
+    background: none;
+    border-right: 4px solid rgb(0, 0, 30);
+    border-top: 4px solid rgb(0, 0, 30);
+    border-top-right-radius: 80%;
+    margin-top: -154px;
+}
+.diagram > .services-icon-wrapper{
+    background: rgb(0, 0, 30);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 800px;
+    border: 3px solid white;
+    position: relative;
+}
+.diagram > .services-icon-wrapper:hover{
+    cursor: pointer;
+}
+.diagram > .services-icon-wrapper > img[class="icon"]{
+    width: 20px;
+    height: 20px;
+}
+.diagram > .services-icon-wrapper > .business-statement{
+    position: absolute;
+    left: 150%;
+    top: 50%;
+    width: 400px;
+    padding: 10px;
+    border-left: 3px solid rgb(0, 0, 30);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.diagram > .services-icon-wrapper > .name-tag{
+    position: absolute;
+    right: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 10px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(0, 0, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.diagram > .services-icon-wrapper > .name-tag > span{
+    font-size: .8em;
+    font-weight: 600;
+}
+.diagram > .services-icon-wrapper > .business-statement > p{
+    font-size: .8em;
+    padding: 70px;
+}
+.diagram > .society-icon-wrapper{
+    background: rgb(0, 0, 30);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: -295px;
+    margin-top: -50px;
+    border: 3px solid white;
+    position: relative;
+}
+.diagram > .society-icon-wrapper:hover{
+    cursor: pointer;
+}
+.diagram > .society-icon-wrapper > img[class="icon"]{
+    width: 20px;
+    height: 20px;
+}
+.diagram > .business-icon-wrapper > img[class="icon"]{
+    width: 20px;
+    height: 20px;
+}
+.diagram > .society-icon-wrapper > .business-statement{
+    position: absolute;
+    left: 150%;
+    top: 50%;
+    width: 400px;
+    padding: 10px;
+    border-left: 3px solid rgb(0, 0, 30);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.diagram > .society-icon-wrapper > .name-tag{
+    position: absolute;
+    right: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 10px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(0, 0, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.diagram > .society-icon-wrapper > .name-tag > span{
+    font-size: .8em;
+    font-weight: 600;
+}
+.diagram > .society-icon-wrapper > .business-statement > p{
+    font-size: .8em;
+    padding: 70px;
+}
+
+@media screen and (max-width:1080px) {
+    .diagram{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        padding: 0;
+    }
+    .diagram > .line{
+        display: none;
+    }
+    .diagram > .business-icon-wrapper{
+        background: none;
+        position: unset;
+        height: fit-content;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .diagram > .business-icon-wrapper >.business-statement{
+        position: unset;
+        margin: 0;
+    }
+    .diagram > .business-icon-wrapper >.name-tag{
+        position: unset;
+        margin:0;
+    }
+    .diagram > .business-icon-wrapper >img{
+        display: none;
+    }
+
+
+    .diagram > .services-icon-wrapper{
+        background: none;
+        position: unset;
+        height: fit-content;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .diagram > .services-icon-wrapper >.business-statement{
+        position: unset;
+        margin: 0;
+    }
+    .diagram > .services-icon-wrapper >.name-tag{
+        position: unset;
+        margin:0;
+    }
+    .diagram > .services-icon-wrapper >img{
+        display: none;
+    }
+
+    .diagram > .society-icon-wrapper{
+        background: none;
+        position: unset;
+        height: fit-content;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .diagram > .society-icon-wrapper >.business-statement{
+        position: unset;
+        margin: 0;
+    }
+    .diagram > .society-icon-wrapper >.name-tag{
+        position: unset;
+        margin:0;
+    }
+    .diagram > .society-icon-wrapper >img{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:680px) {
+    .diagram{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        padding: 0;
+    }
+    .diagram > .business-icon-wrapper{
+        background: none;
+        position: unset;
+        height: fit-content;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .diagram > .business-icon-wrapper >.business-statement{
+        position: unset;
+        margin: 0;
+    }
+    .diagram > .business-icon-wrapper >.name-tag{
+        position: unset;
+        margin:0;
+    }
+    .diagram > .business-icon-wrapper >img{
+        display: none;
+    }
+
+
+    .diagram > .services-icon-wrapper{
+        background: none;
+        position: unset;
+        height: fit-content;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .diagram > .services-icon-wrapper >.business-statement{
+        position: unset;
+        margin: 0;
+    }
+    .diagram > .services-icon-wrapper >.name-tag{
+        position: unset;
+        margin:0;
+    }
+    .diagram > .services-icon-wrapper >img{
+        display: none;
+    }
+
+    .diagram > .society-icon-wrapper{
+        background: none;
+        position: unset;
+        height: fit-content;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .diagram > .society-icon-wrapper >.business-statement{
+        position: unset;
+        margin: 0;
+    }
+    .diagram > .society-icon-wrapper >.name-tag{
+        position: unset;
+        margin:0;
+    }
+    .diagram > .society-icon-wrapper >img{
+        display: none;
+    }
+    
+}

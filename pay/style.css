@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container > .card{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(0,0,30);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:fit-content ;
+}
+.container > .card > img{
+    width: 100%;
+}
+.container > .card > span{
+    font-weight: 600;
+    color: white;
+    margin: 20px 0;
+}
+.container > .card > a{
+    text-decoration: underline;
+    font-weight: 600;
+    color: white;
+    margin: 20px 0;
+}
+.container > .spenn{
+    height: 70%;
+}
+.container > .spenn > img{
+    height: 90%;
+    object-fit: contain;
+}
+.container > .spenn > a{
+    text-decoration: underline;
+    font-weight: 600;
+    color: white;
+}
+
+@media screen and (max-width:680px) {
+    .card{
+        width: 90%;
+    }
+}
